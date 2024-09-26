@@ -1,0 +1,462 @@
+/* Hero Section */
+.hero-section {
+  background-image: url('.././assets/about img3.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section .card {
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  background-color: #fff;
+  padding: 50px;
+  max-width: 1100px;
+  border-left: 10px solid blue;
+}
+
+.hero-section .card h1 {
+  font-size: 48px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.hero-section .card p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Who We Are Section */
+.who-we-are-section {
+  text-align: left;
+  background-color: #fff;
+  padding: 60px 0;
+
+}
+
+.who-we-are-section p {
+  font-size: 20px;
+  line-height: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* Vision Section */
+.vision-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+  background-color: #f9f9f9;
+}
+
+.vision-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+}
+
+.vision-image {
+  flex: 1;
+  width: 40%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.vision-content .card{
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  max-width: 40%;
+  margin-left: 50px;
+  border-right: 10px solid blue;
+  z-index: 1;
+  transform: translateX(-200px);
+}
+
+.vision-content .card h2 {
+  font-size: 36px;
+}
+
+.vision-content .card p {
+  font-size: 18px;
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+  flex-direction: row-reverse;
+}
+
+.mission-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mission-image {
+  flex: 1;
+  width: 40%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.mission-content .card{
+  background-color: #f9f9f9;
+  padding: 50px;
+  max-width: 40%;
+  margin-right: 50px;
+  border-left: 10px solid blue;
+  z-index: 1;
+  transform: translateX(200px);
+}
+
+.mission-content .card h2 {
+  font-size: 36px;
+}
+
+.mission-content .card p {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+/* Objectives Section */
+.objectives-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+  background-color: #f9f9f9;
+}
+
+.objectives-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.objectives-image {
+  flex: 1;
+  width: 40%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.objectives-content .card{
+  background-color: #fff;
+  padding: 30px;
+  max-width: 45%;
+  margin-left: -20px;
+  border-right: 10px solid blue;
+  z-index: 1;
+  transform: translateX(-160px);
+}
+
+.objectives-content .card h2 {
+  font-size: 36px;
+}
+
+.objectives-content .card ul {
+  font-size: 18px;
+  list-style: square;
+  list-style-position: inside;
+  padding-left: 5px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px){
+  /* vision section */
+  .vision-content .card{
+    margin-left: -100px;
+    transform: translateX(-110px);
+  }
+
+  /* mission section */
+  .mission-content .card{
+    padding: 30px;
+    margin-left: -100px;
+    transform: translateX(180px);
+  }
+  
+  /* objective section */
+  .objectives-content .card{
+    padding: 20px;
+    margin-left: -50px;
+    max-width: 45%;
+    transform: translateX(-80px);
+  }
+
+  .objectives-content .card h2 {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 1000px){
+  /* hero section */
+  .hero-section .card h1 {
+    font-size: 44px;
+  }
+
+  .hero-section .card{
+    padding: 35px;
+    width: 60%;
+    border-left: 8px solid blue;
+  }
+
+  /* WhoWeAre section */
+    .who-we-are-section p {
+      max-width: 700px;
+    }
+
+  /* vision section */
+  .vision-content .card {
+    padding: 30px;
+    margin-left: -100px;
+    transform: translateX(-50px);
+  }
+
+  .vision-content .card h2 {
+    font-size: 30px;
+  }
+
+  /* mission section */
+  .mission-content .card {
+    padding: 23px;
+    margin-left: -110px;
+    transform: translateX(200px);
+  }
+
+  .mission-content .card h2 {
+    font-size: 28px;
+  }
+
+  /* objectives section */
+  .objectives-content .card{
+    padding: 20px;
+    max-width: 45%;
+    margin-left: -80px;
+    transform: translateX(-50px);
+  }
+  .objectives-content .card h2 {
+    font-size: 30px;
+  }
+  .objectives-content .card ul {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 850px){
+  /* hero section */
+  .hero-section .card h1 {
+    font-size: 38px;
+  }
+  .hero-section .card{
+    padding: 30px;
+    bottom: -15px;
+    width: 70%;
+    border-left: 7px solid blue;
+  }
+  .hero-section .card p {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  /* who we are section */
+  .who-we-are-section p {
+    font-size: 18px;
+  }
+
+  .who-we-are-section p {
+    max-width: 600px;
+    padding: 0 12px;
+  }
+
+  /* vision section */
+  .vision-content .card{
+    padding: 25px;
+  }
+
+  /* mission content */
+  .mission-content .card{
+    padding: 20px;
+    max-width: 45%;
+    margin-left: -150px;
+    transform: translateX(180px);
+  }
+
+  /* objectives section */
+  .objectives-content .card{
+    padding: 20px;
+    max-width: 50%;
+    margin-left: -150px;
+    transform: translateX(-20px);
+  }
+
+}
+
+
+@media (max-width: 650px){
+  /* who we are section */
+  .who-we-are-section p {
+    padding: 0 20px;
+  }
+
+  .vision-content, .objectives-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-image, .mission-image, .objectives-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* vision section */
+  .vision-content .card{
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 100px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+  }
+  .vision-content .card h2 {
+    font-size: 26px;
+  }
+
+  .mission-content .card {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 -360px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+  }
+  
+  .mission-content .card h2 {
+    font-size: 26px;
+  }
+
+  .objectives-content .card {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 40px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+  }
+
+  .objectives-content .card h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .objectives-content .card ul {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+}
+
+
+@media (max-width: 550px){
+  /* hero section */
+  .hero-section .card{
+    padding: 25px;
+    width: 90%;
+    left: 5%;
+    border-left: 5px solid blue;
+  }
+  .hero-section .card h1 {
+    font-size: 30px;
+  }
+
+  /* who we are section */
+  .who-we-are-section p {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.9rem;
+  }
+
+  .vision-content .card{
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 100px;
+    text-align: center;
+    border: none;
+    padding: 20px 0;
+  }
+
+  .vision-content .card h2 {
+    font-size: 24px;
+  }
+  
+  .vision-content .card p {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+
+  /* mission section */
+  .mission-content .card {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 -360px;
+    padding: 15px;
+  }
+  
+  .mission-content .card h2 {
+    font-size: 24px;
+  }
+  
+  .mission-content .card p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .objectives-content .card {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0 0 40px;
+    text-align: center;
+    border: none;
+    padding: 20px;
+  }
+
+  .objectives-content .card h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .objectives-content .card ul {
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: left;
+  }
+}

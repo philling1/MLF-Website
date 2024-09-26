@@ -1,0 +1,197 @@
+.reportHero-section {
+  background-image: url('.././assets/hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reportHero-section .card {
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  background-color: #fff;
+  padding: 50px;
+  max-width: 1100px;
+  border-left: 10px solid blue;
+}
+
+.reportHero-section .card h1 {
+  font-size: 48px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.reportHero-section .card p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.report-section1, .report-section2 {
+  background: #fff;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.report-section1{
+  border-bottom: 2px solid blue;
+}
+
+.reportPage-img {
+  flex-basis: 40%;
+  width: 100px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.reportPage-text {
+  flex-basis: 56%;
+}
+
+.reportPage-text h2 {
+  font-size: 36px;
+  color: rgba(46, 2, 75, 0.7);
+  margin: 10px 0;
+  max-width: 420px;
+}
+
+.reportPage-text h3 {
+  font-size: 24px;
+  color: rgba(46, 2, 75, 0.7);
+  margin: 5px 0;
+}
+
+.reportPage-text p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Media Queries */
+@media (max-width: 1000px){
+  .reportHero-section .card{
+    padding: 40px;
+  }
+
+  .reportHero-section .card h1 {
+    font-size: 40px;
+  }
+
+  .report-section1, .report-section2 {
+    padding: 30px;
+  }
+
+  .reportPage-text h2 {
+    font-size: 30px;
+    color: rgba(46, 2, 75, 0.7);
+    margin: 10px 0;
+    max-width: 400px;
+  }
+  
+  .reportPage-text h3 {
+    font-size: 20px;
+    color: rgba(46, 2, 75, 0.7);
+    margin: 5px 0;
+  }
+  
+  .reportPage-text p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 850px){
+  .reportHero-section .card h1 {
+    font-size: 38px;
+  }
+
+  .reportHero-section .card{
+    padding: 30px;
+    width: 80%;
+    bottom: -15px;
+    border-left: 7px solid blue;
+  }
+
+  .reportHero-section .card p {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .reportHero-section .card h1 {
+    font-size: 40px;
+  }
+
+  .report-section1, .report-section2 {
+    padding: 25px;
+  }
+
+  .reportPage-text h2 {
+    font-size: 27px;
+    max-width: 370px;
+  }
+}
+
+@media (max-width: 650px){
+  .report-section1, .report-section2 {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .reportPage-img{
+    flex-direction: row;
+    width: 350px;
+  }
+
+  .reportPage-text {
+    padding-top: 10px;
+  }
+
+  .reportPage-text h2 {
+    font-size: 24px;
+    max-width: 350px;
+  }
+  
+  .reportPage-text h3 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .reportPage-text p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 550px){
+  .reportHero-section .card{
+    padding: 25px;
+    width: 90%;
+    left: 5%;
+    border-left: 5px solid blue;
+  }
+
+  .reportHero-section .card h1 {
+    font-size: 30px;
+  }
+
+  .report-section1, .report-section2{
+    flex-direction: column;
+  }
+
+  .reportPage-img{
+    flex-direction: row;
+    width: 300px;
+  }
+}

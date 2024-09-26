@@ -1,0 +1,107 @@
+/* Background for the entire section */
+.team-section {
+  background: linear-gradient(rgba(46, 2, 75, 0.7), rgba(46, 2, 75, 0.7)), url('../../assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Styling for the main card */
+.team-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title at the top of the card */
+.team-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2e024b;
+}
+
+/* Container for the two columns */
+.team-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Each category */
+.team-category {
+  flex: 1;
+  margin: 0 20px;
+}
+
+/* Category title */
+.team-category h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #212121;
+}
+
+/* List of team members */
+.team-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each team member */
+.team-category li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Additional styling for positions */
+.team-category li span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #212EAD;
+}
+
+@media (max-width: 1000px){
+  .team-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 850px){
+  .team-category {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .team-title {
+    font-size: 30px;
+  }
+
+  .team-category h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px){
+  .team-title {
+    font-size: 28px;
+  }
+  
+  .team-columns {
+    flex-direction: column;
+  }
+
+  .team-category {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+}

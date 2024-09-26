@@ -1,0 +1,139 @@
+.report {
+  background: #f8f8f8;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.report-left {
+  flex-basis: 45%;
+}
+
+.report-right {
+  flex-basis: 55%;
+}
+
+.report-img {
+  width: 80%;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.report h3 {
+  font-size: 36px;
+  color: rgba(46, 2, 75, 0.7);
+  margin: 10px 0;
+  max-width: 350px;
+}
+
+.report p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.progress-bar {
+  height: 3px;
+  background: #ddd;
+  border-radius: 2.5px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+  width: 50%; /* Reduced width to half */
+}
+
+.progress-bar .progress {
+  height: 100%;
+  background: #2e024b;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Start from slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0); /* Start from the original position */
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px); /* Move slightly below */
+  }
+}
+
+
+/* Media Queries */
+@media (max-width: 850px){
+  .report h3 {
+    font-size: 32px;
+    max-width: 330px;
+  }
+  
+  .report p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+}
+
+@media (max-width: 650px){
+  .report{
+    flex-direction: column;
+  }
+
+  .report-left{
+    flex-direction: row;
+  }
+
+  .report-img {
+    width: 320px;
+    height: 350px;
+  }
+
+  .report h3 {
+    font-size: 30px;
+    max-width: 320px;
+  }
+  
+  .report p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 550px){
+  .report-img {
+    width: 290px;
+    height: 350px;
+  }
+
+  .report h3 {
+    font-size: 28px;
+    max-width: 320px;
+  }
+}
